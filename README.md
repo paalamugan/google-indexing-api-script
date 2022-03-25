@@ -85,7 +85,7 @@ npm run scheduler
 
 ### Google Spreadsheet Indexing Format
 
-- From Indexing Spreadsheet format.(Where we get all urls)
+- From Indexing Spreadsheet format. (Where we get all urls)
 
 | URLS   |
 | --- |
@@ -93,7 +93,7 @@ npm run scheduler
 | https://example.com/path-to-url1 |
 | https://example.com/path-to-url2 |
 
-- To Indexing Success Spreadsheet format.(Where we add the response of all urls)
+- To Indexing Success Spreadsheet format. (Where we add the all responses of that above urls)
 
 | URL | Google Indexing Response | IndexNow Indexing Response |
 | --- | ------------------------ | ------------- |
