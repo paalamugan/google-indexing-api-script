@@ -1,0 +1,34 @@
+{
+  "name": "google-indexing-api-script",
+  "version": "1.0.0",
+  "description": "Using this script helps to index your website and make ranking first in Google Search",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "scheduler": "node ./schedule-job.js"
+  },
+  "author": "Paalamugan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.0.0",
+    "googleapis": "^92.0.0",
+    "node-cron": "^3.0.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "keywords": [
+    "google",
+    "search",
+    "indexing",
+    "api",
+    "script"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paalamugan/translator-mono-repo.git"
+  }
+}
