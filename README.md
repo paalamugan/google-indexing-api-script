@@ -1,6 +1,6 @@
 # Google Indexing API Script
 
-- Using this script helps to index your website and make ranking first in Google Search.
+**Using this script helps to index your website and make your website ranking first in Google Search.**
 
 Requires node.js - https://nodejs.org/en/download/
 
@@ -25,7 +25,7 @@ You can find your service account email address in two places:
 - The Service account ID column of the Service Accounts view in the Developer Console.
 - The email address has a format similar to the following:
 
-For example, "my-service-account@test-project-42.google.com.iam.gserviceaccount.com".
+For example, "my-service-account@my-project-42.google.com.iam.gserviceaccount.com".
 
 Then...
 
@@ -54,12 +54,14 @@ npm - 6.14.14
 npm install
 ```
 
-- Need to be add important environment variable in `.env` file.
+- You need to be add important environment variable in `.env` file, Below you can find the sample example of `.env` file variables.
+
 ```sh
-INDEXING_SPREADSHEET_ID=''
-INDEXING_SUCCESS_SPREADSHEET_ID=''
-INDEXING_SHEET_NAME=''
-INDEXING_SUCCESS_SHEET_NAME=''
+INDEXNOW_API_KEY='bd1c8878880ef483d8c74caf71209ff21'
+INDEXING_SPREADSHEET_ID='1OOAa59Mu4OyYVBdeoGHwJFaZFn36wA7H007nlRGpLfo'
+INDEXING_SUCCESS_SPREADSHEET_ID='1zOofPBvE-OafrPlfXYA_26sv-8uWq3BXlbIFOz1BSuU'
+INDEXING_SHEET_NAME='Sheet1'
+INDEXING_SUCCESS_SHEET_NAME='Sheet1'
 HTTP_PROXY=''
 HTTPS_PROXY=''
 ```
@@ -81,23 +83,23 @@ npm run start
 npm run scheduler
 ```
 
-### Format Sheet
+### Google Spreadsheet Indexing Format
 
-- Indexing Spreadsheet format
+- From Indexing Spreadsheet format.(Where we get all urls)
 
-| A   | B   | C   | D   | E |
-| --- | --- | --- | --- |--- |
-| https://example.com/path-to-url | | | | |
+| URLS   |
+| --- |
+| https://example.com/path-to-url | 
+| https://example.com/path-to-url1 |
+| https://example.com/path-to-url2 |
 
-- Indexing Success Spreadsheet format
+- To Indexing Success Spreadsheet format.(Where we add the response of all urls)
 
-| A   | B   | C  |
-| --- | --- | --- |
 | URL | Google Indexing Response | IndexNow Indexing Response |
 | --- | ------------------------ | ------------- |
-| https://example.com/path-to-url | Response message of Google indexing | Response message of IndexNow Indexing |
-| https://example.com/path-to-url1 | Response message of Google indexing | Response message of IndexNow Indexing |
-| https://example.com/path-to-url2 | Response message of Google indexing | Response message of IndexNow Indexing |
+| https://example.com/path-to-url | Response message from Google indexing | Response message from IndexNow Indexing |
+| https://example.com/path-to-url1 | Response message from Google indexing | Response message from IndexNow Indexing |
+| https://example.com/path-to-url2 | Response message from Google indexing | Response message from IndexNow Indexing |
 
 ### Tips
 
